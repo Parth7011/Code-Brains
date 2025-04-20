@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="png" href="https://i.pinimg.com/originals/b5/fa/9e/b5fa9e31db988a5b85f88b96663e576a.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h1>Sign up</h1>
+            <form>
+                <div class="input-group" data-icon="👤">
+                   <input type="text" placeholder="Your Name" required  required minlength="3" maxlength="15">
+                </div>
+                <div class="input-group" data-icon="✉️">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group" data-icon="🔒">
+                    <input type="password" placeholder="Password" required minlength="6">
+                </div>
+                <div class="input-group" data-icon="🔒">
+                    <input type="password" placeholder="Repeat your password" required minlength="6">
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">
+                        I agree all statements in <a href="#">Terms of service</a>
+                    </label>
+                </div>
+                <button type="submit" class="register-btn">Register</button>
+            </form>
+            <a href="/e learning website-final/login page/index.html" class="login-link">I am already member</a>
+        </div>
+        <div class="image-section">
+            <div class="image-placeholder">
+                <img src="https://img.freepik.com/premium-vector/woman-doing-online-shopping-flat-color-detailed-character-happy-female-buying-clothes-internet-e-commerce-isolated-cartoon-illustration-web-graphic-design-animation_151150-2858.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+  const btn = document.querySelector(".register-btn")
+    btn.addEventListener("click",function(){
+        alert("Registration Sussesful")
+        window.location.href = "/e learning website-final/e learning website-final/index.html"
+    })
+</script>
+
+</html>

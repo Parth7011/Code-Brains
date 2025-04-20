@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebf0f5;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-section {
+  flex: 1;
+  padding: 50px;
+  background-color: #f0f7fc;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9eaf7;
+}
+
+.image-placeholder img {
+  max-width: 108%;
+  height: auto;
+  border-radius: 1px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px 0 10px 30px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: #666;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-bottom-color: #3498db;
+}
+
+.input-group::before {
+  content: attr(data-icon);
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #666;
+  font-size: 18px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contact-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #2980b9;
+}
+
+.home-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .image-section {
+    display: none;
+  }
+
+  .form-section {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .contact-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .input-group input,
+  .input-group textarea {
+    padding: 8px 0 8px 20px;
+    font-size: 14px;
+  }
+}

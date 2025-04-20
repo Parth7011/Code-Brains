@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="png" href="https://i.pinimg.com/originals/b5/fa/9e/b5fa9e31db988a5b85f88b96663e576a.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Brain Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- login section -->
+    <div class="container" id="signup-section">
+        <div class="image-section">
+            <div class="image-placeholder">
+                <img src="https://img.freepik.com/free-vector/computer-login-concept-illustration_114360-7962.jpg" alt="login image">
+            </div>
+        </div>
+        <div class="form-section">
+            <form>
+    <div class="form-section">
+        <h1>Login</h1>
+        <form>
+            <div class="input-group" data-icon="✉️">
+                <input type="email" placeholder="Your Email" required >
+            </div>
+            <div class="input-group" data-icon="🔒">
+                <input type="password" placeholder="Password" required minlength="6">
+            </div>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <a href="/e learning website-final/sign up page/index.html" class="switch-link">Create new account</a>
+      
+    </div>
+</div>
+</body>
+<script>
+     const btn = document.querySelector(".submit-btn")
+    btn.addEventListener("click",function(e){
+        e.preventDefault()
+        alert("Login Sussesful")
+        window.location.href = "/e learning website-final/e learning website-final/index.html"
+    })
+</script>
+</html>
