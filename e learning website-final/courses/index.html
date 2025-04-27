@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="png" href="https://i.pinimg.com/originals/b5/fa/9e/b5fa9e31db988a5b85f88b96663e576a.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Our Courses</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210222183454/How-to-Become-a-Full-Stack-Web-Developer-in-2021.png" alt="Full Stack Web Development">
+                <h2>Full Stack Web Development</h2>
+                <p>Master both front-end and back-end technologies. Learn HTML, CSS, JavaScript, React, Node.js, and more to become a complete web developer.</p>
+                <button class="button-course">Get Started</button>
+            </div>
+
+            <div class="card">
+                <img src="https://themindfullearningspace.com/wp-content/uploads/2024/06/PYTHON.webp" alt="Python Full Course">
+                <h2>Python Full Course</h2>
+                <p>Dive into Python programming from basics to advanced concepts. Cover data structures, algorithms, and popular frameworks like Django and Flask.</p>
+                <button class="button-course">Get Started</button>
+            </div>
+
+            <div class="card">
+                <img src="/e learning website-final/images/Web Development.jpg" alt="Java from Basics">
+                <h2>Java from Basics</h2>
+                <p>Start your journey with Java programming. Learn core concepts, object-oriented programming, and build robust applications.</p>
+                <button class="button-course">Get Started</button>
+            </div>
+            
+            <div class="card">
+                <img src="/e learning website-final/images/data analysis image.jpg" alt="Data Science Fundamentals">
+                <h2>Data Science Fundamentals</h2>
+                <p>Explore the world of data science. Learn statistical analysis, machine learning, and data visualization using Python and popular libraries.</p>
+                <button class="button-course">Get Started</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // Select all buttons with the class 'button-course'
+  const buttons = document.querySelectorAll('.button-course');
+
+// Add a click event listener to each button
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Get the target URL from the data attribute
+    const targetUrl = button.getAttribute('data-target');
+    // Redirect to the specified URL
+    window.location.href = "payment.html";
+  });
+});
+</script>
+</html>

@@ -1,0 +1,109 @@
+/* Global Styles */
+body {
+    margin: 30;
+    padding: 30;
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+    background-color: #55e6ff; /* Light gray background for the body */
+    color: #000000; /* Dark gray text color */
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0077ff; /* Primary color for links */
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0862c4; /* Darker shade for hover state */
+  }
+  
+  /* Header */
+  header {
+    background-color: #03b6fc; /* White background for the header */
+    padding: 15px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: fixed; /* Fixed header */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0077ff; /* Branding color */
+  }
+  
+  header nav {
+    float: right;
+  }
+  
+  header nav a {
+    margin: 0 15px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Main Content */
+  main {
+    margin-top: 80px; /* Space for the fixed header */
+    padding: 40px;
+    max-width: 1200px;
+    margin: 80px auto; /* Center content with auto margin */
+    background-color: #fff; /* White background for content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  }
+  
+  /* Buttons */
+  .button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0077ff;
+    color: #fff;
+    border-style:solid ;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0056b3; /* Darker shade for hover state */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #fff; /* White background for the footer */
+    padding: 20px 30px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 40px;
+  }
+  
+  footer p {
+    color: #666; /* Light gray text for footer */
+    font-size: 14px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    header nav {
+      float: none;
+      text-align: center;
+      margin-top: 10px;
+    }
+    
+    main {
+      padding: 20px;
+      margin: 100px 20px; /* Reduce margins for smaller screens */
+    }
+  
+    .button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  .container{
+    padding: 10px 20px
+  }
