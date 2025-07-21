@@ -1,8 +1,0 @@
-User-Friendly Interface:
-Intuitive navigation and responsive design for easy access across devices.
-Course Management:
-Navigation, organization, and management of courses, modules, and lessons.
-Ability to ask doubts
-Content Delivery:
-Support for video lectures, live streaming, and downloadable materials.
-Integration with third-party content providers
